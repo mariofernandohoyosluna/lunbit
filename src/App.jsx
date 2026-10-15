@@ -176,10 +176,9 @@ export default function App() {
       gsap.utils.toArray('[data-reveal]').forEach((element) => {
         gsap.from(element, { y: 28, opacity: 0, duration: 0.7, ease: 'power2.out', scrollTrigger: { trigger: element, start: 'top 86%', once: true } });
       });
-      gsap.utils.toArray('.service-card').forEach((card, index) => {
-        gsap.from(card, { y: 32, opacity: 0, duration: 0.75, delay: index * 0.1, ease: 'power2.out', scrollTrigger: { trigger: '.services-grid', start: 'top 82%', once: true } });
-      });
+      gsap.from('.services-grid', { y: 20, opacity: 0, duration: 0.7, ease: 'power2.out', scrollTrigger: { trigger: '.services-grid', start: 'top 82%', once: true } });
       const processSteps = gsap.utils.toArray('.process-step');
+      gsap.set('.connection-glow', { drawSVG: '0%', opacity: 0.14 });
       const activateStep = (step, index) => {
         const stage = document.querySelector('.process-stage');
         stage?.setAttribute('data-stage', index);
@@ -188,9 +187,11 @@ export default function App() {
         const current = stage?.querySelector('.stage-current');
         if (current) current.textContent = step.querySelector('h3').textContent.toUpperCase();
         processSteps.forEach((item, itemIndex) => item.classList.toggle('is-active', itemIndex === index));
+        stage?.querySelectorAll('.process-module').forEach((module, moduleIndex) => module.classList.toggle('is-lit', moduleIndex <= Math.min(index, 4)));
         gsap.to('.process-beam', { scaleY: index / Math.max(processSteps.length - 1, 1), duration: 0.55, ease: 'power2.out', overwrite: true });
         gsap.to('.stage-progress i', { scaleX: (index + 1) / processSteps.length, duration: 0.65, ease: 'power2.out', overwrite: true });
-        gsap.fromTo('.process-module', { scale: 0.88, opacity: 0.56 }, { scale: 1, opacity: 1, duration: 0.55, stagger: 0.045, ease: 'power2.out', overwrite: true });
+        gsap.fromTo('.process-module', { scale: 0.94 }, { scale: 1, duration: 0.55, stagger: 0.045, ease: 'power2.out', overwrite: true });
+        gsap.to('.connection-glow', { drawSVG: ((index + 1) / processSteps.length) * 100 + '%', opacity: 0.92, duration: 0.7, ease: 'power2.out', overwrite: true });
         gsap.to('.process-visual-core', { rotation: index * 32, duration: 0.8, ease: 'power2.out', overwrite: true });
       };
       processSteps.forEach((step, index) => {
