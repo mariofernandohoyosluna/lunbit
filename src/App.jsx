@@ -6,6 +6,7 @@ import { MorphSVGPlugin } from 'gsap/MorphSVGPlugin';
 import {
   IconApps,
   IconArrowUpRight,
+  IconBrandInstagram,
   IconAutomation,
   IconBulb,
   IconCode,
@@ -294,7 +295,7 @@ export default function App() {
           </div>
         </section>
       </main>
-      <footer className="site-footer section-dark"><div className="container footer-main"><a className="logo-link footer-logo" href="#inicio" aria-label="LUNBIT, volver al inicio"><Logo /></a><p>Ideas que se convierten<br/>en soluciones reales.</p><nav className="footer-nav" aria-label="Navegación del pie de página"><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></nav><a className="back-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} LUNBIT Digital Solutions. Todos los derechos reservados.</span><span>Proyectos remotos y digitales · Colombia</span></div></footer>
+      <footer className="site-footer section-dark"><div className="container footer-main"><a className="logo-link footer-logo" href="#inicio" aria-label="LUNBIT, volver al inicio"><Logo /></a><p>Ideas que se convierten<br/>en soluciones reales.</p><nav className="footer-nav" aria-label="Enlaces del pie de página"><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a><a className="footer-social-link" href="https://www.instagram.com/lunbit.dev" target="_blank" rel="noopener noreferrer" aria-label="LUNBIT en Instagram (se abre en una nueva pestaña)"><IconBrandInstagram size={15} stroke={1.7} aria-hidden="true"/><span>Instagram</span></a></nav><a className="back-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} LUNBIT Digital Solutions. Todos los derechos reservados.</span><span>Proyectos remotos y digitales · Colombia</span></div></footer>
     </>
   );
 }
