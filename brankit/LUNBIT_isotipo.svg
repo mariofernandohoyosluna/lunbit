@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 382 360">
+<defs>
+  <linearGradient id="lunbitGradient" gradientUnits="userSpaceOnUse" x1="88" y1="72" x2="270" y2="300">
+    <stop offset="0%" stop-color="#2376E8"/>
+    <stop offset="48%" stop-color="#6C3CF3"/>
+    <stop offset="72%" stop-color="#315CEB"/>
+    <stop offset="100%" stop-color="#10BBD1"/>
+  </linearGradient>
+</defs><g transform="translate(0,15)">
+<path d="M88 72 H142 V246
+         C142 273.614 164.386 296 192 296
+         H294 V242 H196 V72 Z"
+      fill="url(#lunbitGradient)"/>
+<rect x="196" y="34" width="62" height="62" rx="8" fill="#12BBD0"/></g></svg>
