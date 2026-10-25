@@ -85,7 +85,7 @@ export function Header() {
       </button>
       <nav id="main-nav" className={open ? 'main-nav is-open' : 'main-nav'} aria-label="Navegación principal">
         <a href="#servicios" className={activeSection === 'servicios' ? 'is-active' : ''} aria-current={activeSection === 'servicios' ? 'location' : undefined} onClick={() => setOpen(false)}>Servicios</a><a href="#proceso" className={activeSection === 'proceso' ? 'is-active' : ''} aria-current={activeSection === 'proceso' ? 'location' : undefined} onClick={() => setOpen(false)}>Proceso</a><a href="#proyectos" className={activeSection === 'proyectos' ? 'is-active' : ''} aria-current={activeSection === 'proyectos' ? 'location' : undefined} onClick={() => setOpen(false)}>Proyectos</a><a href="#contacto" className={activeSection === 'contacto' ? 'is-active' : ''} aria-current={activeSection === 'contacto' ? 'location' : undefined} onClick={() => setOpen(false)}>Contacto</a>
-        <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}><IconBrandWhatsapp size={16} aria-hidden="true"/> Hablemos <span aria-hidden="true">↗</span></a>
+        <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setOpen(false)}><IconBrandWhatsapp size={16} aria-hidden="true"/> Hablemos</a>
         <a className="menu-brand-mark" href="#inicio" aria-label="LUNBIT, volver al inicio" onClick={() => setOpen(false)}><img src="/brand/LUNBIT_isotipo.svg" alt="" /></a>
       </nav>
     </header>

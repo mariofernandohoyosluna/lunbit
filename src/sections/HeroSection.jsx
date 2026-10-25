@@ -10,7 +10,7 @@ export function HeroSection() {
             <p className="eyebrow"><span className="eyebrow-mark"/> SOFTWARE · IA · AUTOMATIZACIÓN</p>
             <h1 className="hero-title" id="hero-heading">Ideas que se convierten en <span>soluciones reales.</span></h1>
             <p className="hero-copy">Diseñamos y construimos software, productos digitales y soluciones inteligentes adaptadas a las necesidades de cada negocio.</p>
-            <div className="hero-actions"><a className="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer"><IconBrandWhatsapp size={17} aria-hidden="true"/> Hablemos de tu idea <span aria-hidden="true">↗</span></a><a className="text-link" href="#servicios">Conoce lo que hacemos <span aria-hidden="true">↓</span></a></div>
+            <div className="hero-actions"><a className="button button-primary" href={whatsappUrl} target="_blank" rel="noreferrer"><IconBrandWhatsapp size={17} aria-hidden="true"/> Hablemos de tu idea</a><a className="text-link" href="#servicios">Conoce lo que hacemos <span aria-hidden="true">↓</span></a></div>
             <div className="hero-proof"><span className="hero-proof-line"/><span>Ideas digitales</span><i/><span>Automatización</span><i/><span>Integraciones</span></div>
           </div>
           <div className="hero-art-wrap">
