@@ -25,4 +25,15 @@ npm run preview
 
 ## Contacto
 
-Los botones abren WhatsApp al número configurado en `src/App.jsx` (`+57 310 433 9539`) con un mensaje inicial preparado. Actualiza `whatsappUrl` allí si cambia el número o el texto. No hay formulario ni backend de contacto.
+Los botones abren WhatsApp al número y con el mensaje configurados en `src/data/siteContent.js`. No hay formulario ni backend de contacto.
+
+## Estructura del código
+
+`src/App.jsx` compone la página y conecta las piezas. La interfaz está dividida por responsabilidad:
+
+- `src/sections/`: secciones de la landing y la franja de servicios.
+- `src/components/layout/`: navegación, progreso de lectura y pie de página.
+- `src/components/ui/`: controles reutilizables como el botón flotante de WhatsApp.
+- `src/hooks/`: comportamiento de animación y desplazamiento de la página.
+- `src/data/siteContent.js`: textos, servicios, etapas, enlaces y configuración compartida.
+- `src/styles.css`: estilos globales y visuales.
